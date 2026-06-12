@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SWIFT FIX - Ремонт телефонов</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="icon" href="img/logoSF.svg" />
+        <link rel="stylesheet" href="styles/styles.css?v=1.2" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-header">
+            <div class="container-fluid">
+                <a class="logo" href="#"> SWIFT FIX </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="servies.html#services">Цены и запись</a>
+                        <a class="nav-link" href="index.html#reviews">Отзывы</a>
+                        <a class="nav-link" href="regist.html#info">О нас</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="order.php">Отследить ремонт</a>
+                        <a class="nav-link" href="regist.html#form-info">Задать вопрос</a>
+                        <a class="nav-link" href="regist.html#info">+7(983)-523-55-34</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section id="contacts">
+                <h2 class="name-block">Как с нами связаться?</h2>
+                <div class="info-cont">
+                    <div class="con-info" id="info">
+                        <p>Мы находимся по адресу:</p>
+                        <p class="bi bi-geo-alt-fill">ㅤТуполева 3</p>
+                        <p>Наш номер телефона:</p>
+                        <div class="bi bi-telephone-fill tel">
+                            <p style="margin: 0">ㅤ+7(983)-523-55-34<br />ㅤ+7(999)-459-03-84</p>
+                        </div>
+
+                        <p>Электронная почта:</p>
+                        <p class="bi bi-envelope-fill">ㅤswift-fix@gmail.com</p>
+                        <p>Режим работы:</p>
+                        <p class="bi bi-clock-fill">ㅤБез выходных с 10:00 до 22:00</p>
+                    </div>
+                    <div class="form-sup" id="form-info">
+                        <h3 class="text-center">
+                            Напишите нам<br />
+                            Ответим в ближайшее время
+                        </h3>
+                        <form class="form-def form-ord" action="send_form.php" method="POST">
+                            <div class="header-form suph">
+                                <div class="group">
+                                    <label for="name-sup">Ваше имя</label>
+                                    <input
+                                        type="text"
+                                        id="namesup"
+                                        name="namesup"
+                                        required
+                                        title="Можно использовать только буквы русского и английского алфавита, пробелы и дефисы"
+                                        placeholder="Иван Иванович Иванов"
+                                        pattern="[A-Za-zА-Яа-яЁё\s\-]+"
+                                        maxlength="100" />
+                                </div>
+
+                                <div class="group">
+                                    <label for="phone-sup">Ваш номер телефона</label>
+                                    <input
+                                        type="tel"
+                                        id="phonesup"
+                                        name="phonesup"
+                                        required
+                                        pattern="[0-9]+"
+                                        title="Можно использовать только цифры"
+                                        placeholder="8 900 222 35 35"
+                                        maxlength="25" />
+                                </div>
+                            </div>
+
+                            <div class="group">
+                                <label for="messagesup">Ваш вопрос</label>
+                                <textarea
+                                    id="messagesup"
+                                    name="messagesup"
+                                    rows="5"
+                                    placeholder="Опишите вопрос"
+                                    maxlength="1000"></textarea>
+                                <output for="messagesup" id="count">1000</output>
+                            </div>
+
+                            <button class="btn" type="submit">отправить<br>вопрос</button>
+                            <div
+                            class="sogl">
+                            <input
+                                type="checkbox"
+                                id="agreement"
+                                name="agreement"
+                                required/>
+                            <label for="agreement" >
+                                Я согласен на обработку персональных данных
+                            </label>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section id="social">
+                <h2 class="name-block p-4">Наши социальные сети</h2>
+                <div class="footer-social">
+                    <a href="https://ok.ru/"><img src="img/Odnoklassniki.svg" alt="ОК" />OK</a>
+                    <a href="https://m.vk.com/"><img src="img/vkLogo.svg" alt="ВКонтакте" />VK</a>
+                    <a href="https://max.ru/"><img src="img/Max_logo.svg" alt="MAX" />MAX</a>
+                </div>
+            </section>
+            <section id="map-section">
+                <h2 class="visually-hidden">Наше расположение на карте</h2>
+                <iframe
+                    class="map"
+                    id="map"
+                    title="Наше расположение - г. Омск, ул. Ленина, 52"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2290.1401531937404!2d73.37392929037335!3d54.97064130268383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43aafdfe7fe12741%3A0xe957bc32773e66d8!2z0YPQuy4g0JvQtdC90LjQvdCwLCA1Miwg0J7QvNGB0LosINCe0LzRgdC60LDRjyDQvtCx0LsuLCA2NDQwNDI!5e0!3m2!1sru!2sru!4v1762958583689!5m2!1sru!2sru">
+                </iframe>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-info">
+                <a class="logo" href="#"> SWIFT FIX </a>
+                <p>Не нашли что искали?<br />Напишите нам и мы вам поможем!</p>
+                <div class="footer-social">
+                    <a href="https://ok.ru/"><img src="img/Odnoklassniki.svg" alt="ОК" /></a>
+                    <a href="https://m.vk.com/"><img src="img/vkLogo.svg" alt="ВКонтакте" /></a>
+                    <a href="https://max.ru/"><img src="img/Max_logo.svg" alt="MAX" /></a>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+        <script>
+                                messagesup.oninput = () => (count.value = `${1000 - messagesup.value.length}`);
+                            </script>
+    </body>
+</html>

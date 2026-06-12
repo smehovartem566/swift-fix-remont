@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SWIFT FIX - Ремонт телефонов</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="icon" href="img/logoSF.svg" />
+        <link rel="stylesheet" href="styles/styles.css?v=1.2" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-header">
+            <div class="container-fluid">
+                <a class="logo" href="#"> SWIFT FIX </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="servies.html#services">Цены и запись</a>
+                        <a class="nav-link" href="index.html#reviews">Отзывы</a>
+                        <a class="nav-link" href="regist.html#info">О нас</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="order.php">Отследить ремонт</a>
+                        <a class="nav-link" href="regist.html#form-info">Задать вопрос</a>
+                        <a class="nav-link" href="regist.html#info">+7(983)-523-55-34</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero" id="iphone">
+                        <div class="hero-cont">
+                            <div class="model-img">
+                                <img src="img/iphon.png" alt="Смартфон Apple iPhone" />
+                            </div>
+                            <div class="hero-text text-white">
+                                <p class="hero-title">Ремонт смартфонов Apple iPhone</p>
+                                <p>Восстановите свою мобильную жизнь в мгновение ока!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero" id="samsung">
+                        <div class="hero-cont">
+                            <div class="model-img">
+                                <img src="img/Samsung.png" alt="Смартфон Samsung Galaxy" />
+                            </div>
+                            <div class="hero-text text-white">
+                                <p class="hero-title">Ремонт смартфонов Samsung Galaxy</p>
+                                <p>Восстановите свою мобильную жизнь в мгновение ока!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero" id="pixel">
+                        <div class="hero-cont">
+                            <div class="model-img">
+                                <img src="img/pixel.png" alt="Смартфон Google Pixel" />
+                            </div>
+                            <div class="hero-text">
+                                <p class="hero-title">Ремонт смартфонов Google Pixel</p>
+                                <p>Восстановите свою мобильную жизнь в мгновение ока!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero" id="oneplus">
+                        <div class="hero-cont">
+                            <div class="model-img">
+                                <img src="img/oneplus.png" alt="Смартфон OnePlus" />
+                            </div>
+                            <div class="hero-text text-white">
+                                <p class="hero-title">Ремонт смартфонов OnePlus</p>
+                                <p>Восстановите свою мобильную жизнь в мгновение ока!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero" id="xiaomi">
+                        <div class="hero-cont">
+                            <div class="model-img">
+                                <img src="img/xiaomi.png" alt="Смартфон Xiaomi" />
+                            </div>
+                            <div class="hero-text">
+                                <p class="hero-title">Ремонт смартфонов Xiaomi</p>
+                                <p>Восстановите свою мобильную жизнь в мгновение ока!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section id="services">
+                <h2 class="name-block">Сколько стоит ремонт телефона?</h2>
+                <table class="table-10x2">
+                    <tr class="tr-header">
+                        <td class="one-td">Услуга</td>
+                        <td class="two-td">Цена</td>
+                        <td class="one-td">Заказать</td>
+                    </tr>
+                    <tr>
+                        <td>Диагностика</td>
+                        <td>Бесплатно</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Замена дисплея</td>
+                        <td>от 589 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Замена аккумулятора (батареи)</td>
+                        <td>от 349 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Замена задней крышки</td>
+                        <td>от 289 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Замена корпуса</td>
+                        <td>от 499 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Замена порта зарядки</td>
+                        <td>от 419 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Замена стекла камеры</td>
+                        <td>от 349 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Замена основной (задней) камеры</td>
+                        <td>от 349 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Замена фронтальной (передней) камеры</td>
+                        <td>от 399 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Прошивка телефона</td>
+                        <td>от 249 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Разблокировка телефона</td>
+                        <td>от 249 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Сбор/разбор</td>
+                        <td>от 1490 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Восстановление после попадания влаги</td>
+                        <td>от 1390 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Восстановление материнской платы/компонентов</td>
+                        <td>от 1390 руб.</td>
+                        <td class="ord">
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Записаться
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <button class="btn add-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Записаться
+                </button>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-info">
+                <a class="logo" href="#"> SWIFT FIX </a>
+                <p>Не нашли что искали?<br />Напишите нам и мы вам поможем!</p>
+                <div class="footer-social">
+                    <a href="https://ok.ru/"><img src="img/Odnoklassniki.svg" alt="ОК" /></a>
+                    <a href="https://m.vk.com/"><img src="img/vkLogo.svg" alt="ВКонтакте" /></a>
+                    <a href="https://max.ru/"><img src="img/Max_logo.svg" alt="MAX" /></a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body mod-cont">
+                        <h3 class="text-center">Записаться на ремонт</h3>
+                        
+                        <form class="form-def form-ord" action="send_form.php" method="POST">
+                            <div class="header-form">
+                                <div class="group">
+                                    <label for="namemod">Ваше имя</label>
+                                    <input
+                                        type="text"
+                                        id="namemod"
+                                        name="namemod"
+                                        required
+                                        title="Можно использовать только буквы русского и английского алфавита, пробелы и дефисы"
+                                        placeholder="Иван Иванович Иванов"
+                                        pattern="[A-Za-zА-Яа-яЁё\s\-]+"
+                                        maxlength="100" />
+                                </div>
+
+                                <div class="group">
+                                    <label for="modelmod">Модель вашего устройства</label>
+                                    <input
+                                        type="text"
+                                        id="modelmod"
+                                        name="modelmod"
+                                        required
+                                        title="Модель устройства"
+                                        placeholder="iPhone 12 PRO"
+                                        maxlength="100" />
+                                </div>
+
+                                <div class="group">
+                                    <label for="phonemod">Ваш номер телефона</label>
+                                    <input
+                                        type="tel"
+                                        id="phonemod"
+                                        name="phonemod"
+                                        required
+                                        pattern="[0-9]+"
+                                        title="Можно использовать только цифры"
+                                        placeholder="8 900 222 35 35"
+                                        maxlength="25" />
+                                </div>
+                            </div>
+                            <div class="group">
+                                <label for="messagebell">Что случилось с телефоном?</label>
+                                <textarea
+                                    id="messagebell"
+                                    name="messagebell"
+                                    rows="1"
+                                    placeholder="Уронил, разбился экран . . ."
+                                    maxlength="1000"></textarea>
+
+                                <output for="messagebell" id="count">1000</output>
+                            </div>
+                            <button class="btn" type="submit">Записаться</button>
+                            <div
+                            class="sogl">
+                            <input
+                                type="checkbox"
+                                id="agreement"
+                                name="agreement"
+                                required/>
+                            <label for="agreement">
+                                Я согласен на обработку персональных данных
+                            </label>
+                        </div>
+                        </form>
+                        
+                        <h5 class="text-center p-4">Или напишите нам в мессенджер</h5>
+                        <div class="footer-social">
+                            <a href="https://ok.ru/"><img src="img/Odnoklassniki.svg" alt="ОК" />OK</a>
+                            <a href="https://m.vk.com/"><img src="img/vkLogo.svg" alt="ВКонтакте" />VK</a>
+                            <a href="https://max.ru/"><img src="img/Max_logo.svg" alt="MAX" />MAX</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+        <script>
+                                messagebell.oninput = () => (count.value = `${1000 - messagebell.value.length}`);
+                            </script>
+    </body>
+</html>
